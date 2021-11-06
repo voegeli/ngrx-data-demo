@@ -1,24 +1,9 @@
 {
   "posts": [
     {
-      "title": "ffgdfg",
-      "author": "dfgdfg",
-      "id": 2
-    },
-    {
-      "title": "sdfsdf",
-      "author": "dsfsdf",
-      "id": 3
-    },
-    {
-      "title": "fgdfsg",
-      "author": "dgsd",
-      "id": 4
-    },
-    {
-      "title": "fdgdfshjgk",
-      "author": "dfsgsfg",
-      "id": 5
+      "title": "Neuer Post",
+      "author": "Peter",
+      "id": 1
     }
   ],
   "comments": [],
