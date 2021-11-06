@@ -1,10 +1,13 @@
-<div classs="info">
-    <h3>{{post?.title}}</h3>
-    <p>{{post?.author}}</p>
-</div>
+<div class="card">
+    <div class="card-body">
+        <div classs="info">
+            <h3>{{post?.title}}</h3>
+            <p>{{post?.author}}</p>
+        </div>
 
-<div class="action">
-    <a type="button" [routerLink]="['/edit', post?.id ]" class="btn btn-primary" >Edit</a>
-    <button type="button" class="btn btn-danger" (click)="onRemovePost()">Remove</button>
+        <div class="action">
+            <a type="button" [routerLink]="['/edit', post?.id ]" class="btn btn-primary">Edit</a>
+            <button type="button" class="btn btn-danger" (click)="onRemovePost()">Remove</button>
+        </div>
+    </div>
 </div>
-

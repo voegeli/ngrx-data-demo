@@ -1,18 +1,27 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "title": "ffgdfg",
+      "author": "dfgdfg",
+      "id": 2
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "sdfsdf",
+      "author": "dsfsdf",
+      "id": 3
+    },
+    {
+      "title": "fgdfsg",
+      "author": "dgsd",
+      "id": 4
+    },
+    {
+      "title": "fdgdfshjgk",
+      "author": "dfsgsfg",
+      "id": 5
     }
   ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }

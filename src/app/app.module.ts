@@ -16,6 +16,10 @@ import { PostComponent } from './pages/index/components/post/post.component';
 import { IndexComponent } from './pages/index/index.component';
 import { EditComponent } from './pages/edit/edit.component';
 import { CreateComponent } from './pages/create/create.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormlyModule } from '@ngx-formly/core';
+import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
+import { PostFormComponent } from './pages/components/post-form/post-form.component';
 
 @NgModule({
     declarations: [
@@ -23,7 +27,8 @@ import { CreateComponent } from './pages/create/create.component';
         IndexComponent,
         PostComponent,
         EditComponent,
-        CreateComponent
+        CreateComponent,
+        PostFormComponent
     ],
     imports: [
         BrowserModule,
@@ -34,7 +39,10 @@ import { CreateComponent } from './pages/create/create.component';
         StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production}),
         EffectsModule.forRoot([]),
         EntityDataModule.forRoot(entityConfig),
-        NgbModule
+        NgbModule,
+        ReactiveFormsModule,
+        FormlyModule.forRoot({ extras: { lazyRender: true } }),
+        FormlyBootstrapModule
 
     ],
     providers: [

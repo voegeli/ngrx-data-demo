@@ -10,3 +10,6 @@ or
 
 npm run startServer
 
+## Start development Server
+
+npm start
