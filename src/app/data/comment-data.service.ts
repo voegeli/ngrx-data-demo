@@ -1,11 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { DefaultDataService, HttpUrlGenerator } from '@ngrx/data';
-import { Post } from 'src/app/models/Post';
 
 @Injectable({providedIn: 'root'})
-export class PostDataService extends DefaultDataService<Post> {
+export class CommentDataService extends DefaultDataService<Comment> {
     constructor(http: HttpClient, httpUrlGenerator: HttpUrlGenerator) {
-        super('Post', http, httpUrlGenerator);
+        super('Comment', http, httpUrlGenerator);
     }
 }
