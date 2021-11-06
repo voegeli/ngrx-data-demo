@@ -3,6 +3,8 @@
     <p>{{post?.author}}</p>
 </div>
 
-
-<button type="button" class="btn btn-primary" (click)="onRemovePost()">Remove</button>
+<div class="action">
+    <a type="button" [routerLink]="['/edit', post?.id ]" class="btn btn-primary" >Edit</a>
+    <button type="button" class="btn btn-danger" (click)="onRemovePost()">Remove</button>
+</div>
 

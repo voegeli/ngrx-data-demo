@@ -14,12 +14,16 @@ import { AppComponent } from './app.component';
 import { entityConfig } from './entity-metadata';
 import { PostComponent } from './pages/index/components/post/post.component';
 import { IndexComponent } from './pages/index/index.component';
+import { EditComponent } from './pages/edit/edit.component';
+import { CreateComponent } from './pages/create/create.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         IndexComponent,
-        PostComponent
+        PostComponent,
+        EditComponent,
+        CreateComponent
     ],
     imports: [
         BrowserModule,
